@@ -8,7 +8,7 @@ class Solution {
         int length = 1; //don't need to check first index
         //number isn't already included in the array up to the index at 'length' add it
         for (int i = 1; i<nums.length;i++){ 
-            if (nums[i]>nums[i-1]){         //Use fact that it is a sorted array, if number is bigger than previous it is not a duplicate
+            if (nums[i]!=nums[i-1]){        
                 nums[length] = nums[i];
                 length++;
             }
